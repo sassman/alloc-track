@@ -16,7 +16,7 @@ mod backtrace_support;
 #[cfg(feature = "backtrace")]
 use backtrace_support::*;
 #[cfg(feature = "backtrace")]
-pub use backtrace_support::{BacktraceMetric, BacktraceReport, HashedBacktrace};
+pub use backtrace_support::{backtrace, BacktraceMetric, BacktraceReport, HashedBacktrace};
 
 /// next thread id incrementor
 static THREAD_ID_COUNTER: AtomicUsize = AtomicUsize::new(0);
